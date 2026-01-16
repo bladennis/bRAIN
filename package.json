@@ -31,8 +31,5 @@
 	"dependencies": {
 		"graphql": "^16.6.0",
 		"graphql-request": "^6.1.0"
-	},
-	"engines": {
-		"node": "18.x"
 	}
 }
