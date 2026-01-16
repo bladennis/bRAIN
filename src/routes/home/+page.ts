@@ -22,7 +22,7 @@ export const load = (async ({ fetch }) => {
     const startDateFormat = startDate.getFullYear() + '-' + startDateMonth + '-' + startDateDay
     const endDateFormat = endDate.getFullYear() + '-' + endDateMonth + '-' + endDateDay
 
-    const endpoint = `https://api.open-meteo.com/v1/forecast?latitude=52.37&longitude=4.89&daily=precipitation_sum&forecast_days=3&start_date=${startDateFormat}&end_date=${endDateFormat}&timezone=Europe%2FBerlin`;
+    const endpoint = `https://api.open-meteo.com/v1/forecast?latitude=52.37&longitude=4.89&daily=precipitation_sum&start_date=${startDateFormat}&end_date=${endDateFormat}&timezone=Europe%2FBerlin`;
     console.log(endpoint)
 
     const response = await fetch(endpoint);
